@@ -13,8 +13,6 @@ class Song
     @@artists << artist
     @@genres << genre
     @@genre_count = {}
-    @@genre_count[genre] = 0
-    @@genre_count[genre] += 1
   end
   
   def self.count
@@ -32,5 +30,9 @@ class Song
   def self.genre_count
     @@genre_count
     @@genres.map { |x| [x, @@genres.count(x)] }.to_h
+  end
+  
+  def self.artists_count
+    
   end
 end
