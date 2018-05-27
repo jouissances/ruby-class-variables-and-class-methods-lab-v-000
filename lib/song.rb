@@ -30,6 +30,6 @@ class Song
   end
   
   def self.genre_count
-    @@hash
+    @@genre_count
   end
 end
