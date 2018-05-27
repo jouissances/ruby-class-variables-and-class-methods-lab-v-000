@@ -13,7 +13,6 @@ class Song
     @genre = genre
     @@artists << artist
     @@genres << genre
-    @@genre_count[genre] = 0
     @@genre_count
   end
   
